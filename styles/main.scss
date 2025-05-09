@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.settings-page {
+  .avatar-img {
+    @extend %rounded-avatar;
+  }
+
+  form {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  h2 {
+    color: $primary-color;
+  }
+}
